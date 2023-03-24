@@ -21,3 +21,6 @@ INSERT INTO employee_payroll(name, salary, startDate) VALUES
 ('Aditya', 20000, '2021-02-14'),
 ('John', 30000, '2020-8-15'),
 ('Esha', 20000, '2022-01-6');
+
+--Retrieve data from table
+SELECT * FROM employee_payroll;
