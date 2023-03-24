@@ -24,3 +24,8 @@ INSERT INTO employee_payroll(name, salary, startDate) VALUES
 
 --Retrieve data from table
 SELECT * FROM employee_payroll;
+
+--ability to retrieve perticular emlloyee
+SELECT salary FROM employee_payroll WHERE name = 'Rohan';
+--joined
+SELECT * FROM employee_payroll WHERE startDate BETWEEN CAST('2021-01-01' AS DATE) AND GETDATE();
