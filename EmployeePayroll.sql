@@ -62,3 +62,9 @@ ALTER TABLE employee_payroll ADD phone_number BIGINT;
 ALTER TABLE employee_payroll ADD address VARCHAR(50);
 TRUNCATE TABLE employee_payroll;
 ALTER TABLE employee_payroll ADD department VARCHAR(50) NOT NULL;
+
+--UC9
+ALTER TABLE employee_payroll  ADD deductions MONEY
+ALTER TABLE employee_payroll  ADD taxablePay MONEY
+ALTER TABLE employee_payroll  ADD incomeTax  MONEY
+ALTER TABLE employee_payroll  ADD netPay MONEY
