@@ -58,6 +58,7 @@ Select Gender, MAX(salary) From employee_payroll GROUP BY Gender;
 Select Gender, COUNT(name) From employee_payroll GROUP BY Gender;
 
 --Uc8
+ALTER TABLE employee_payroll ADD basic_pay MONEY;
 ALTER TABLE employee_payroll ADD phone_number BIGINT;
 ALTER TABLE employee_payroll ADD address VARCHAR(50);
 TRUNCATE TABLE employee_payroll;
@@ -68,3 +69,8 @@ ALTER TABLE employee_payroll  ADD deductions MONEY
 ALTER TABLE employee_payroll  ADD taxablePay MONEY
 ALTER TABLE employee_payroll  ADD incomeTax  MONEY
 ALTER TABLE employee_payroll  ADD netPay MONEY
+
+--UC10
+INSERT INTO employee_payroll (name,salary,gender,phone_number,department)
+VALUES ('Terissa',200000,'F',987654321,'HR'),
+('Terissa',200000,'F',987654321,'Sales')
