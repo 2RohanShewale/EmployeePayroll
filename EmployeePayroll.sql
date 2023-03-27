@@ -56,3 +56,9 @@ Select Gender, AVG(salary) From employee_payroll GROUP BY Gender;
 Select Gender, MIN(salary) From employee_payroll GROUP BY Gender;
 Select Gender, MAX(salary) From employee_payroll GROUP BY Gender;
 Select Gender, COUNT(name) From employee_payroll GROUP BY Gender;
+
+--Uc8
+ALTER TABLE employee_payroll ADD phone_number BIGINT;
+ALTER TABLE employee_payroll ADD address VARCHAR(50);
+TRUNCATE TABLE employee_payroll;
+ALTER TABLE employee_payroll ADD department VARCHAR(50) NOT NULL;
